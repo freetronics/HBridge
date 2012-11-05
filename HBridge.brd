@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="6.25" altunitdist="mil" altunit="mil"/>
+<grid distance="0.01" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="6.25" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -3510,7 +3510,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <polygon width="0.4064" layer="16">
 <vertex x="0" y="50.8" curve="-73.740878"/>
 <vertex x="2.54" y="53.34"/>
-<vertex x="55.245" y="53.49875" curve="-73.740878"/>
+<vertex x="55.245" y="53.34" curve="-73.740878"/>
 <vertex x="57.785" y="50.95875"/>
 <vertex x="57.785" y="40.005"/>
 <vertex x="59.69" y="38.1"/>
@@ -3523,7 +3523,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <polygon width="0.4064" layer="1">
 <vertex x="0" y="50.8" curve="-73.740878"/>
 <vertex x="2.54" y="53.34"/>
-<vertex x="55.245" y="53.49875" curve="-73.740878"/>
+<vertex x="55.245" y="53.34" curve="-73.740878"/>
 <vertex x="57.785" y="50.95875"/>
 <vertex x="57.785" y="40.005"/>
 <vertex x="59.69" y="38.1"/>
@@ -4096,32 +4096,6 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <contactref element="H5" pad="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="5,1,191b1da2513a3afa"/>
-<approved hash="5,1,e79c9dbe512a4471"/>
-<approved hash="5,1,62a01dbe51224145"/>
-<approved hash="5,1,64c91dbe5122472c"/>
-<approved hash="5,1,e9259dbe513a4ad8"/>
-<approved hash="5,1,6e161dba51224df7"/>
-<approved hash="5,1,9e779dba51223d96"/>
-<approved hash="5,1,66bb253051224dda"/>
-<approved hash="5,1,e188a534513a4af5"/>
-<approved hash="5,1,11b62528513a3ad7"/>
-<approved hash="5,1,96daa53051223dbb"/>
-<approved hash="5,1,6c64253451224701"/>
-<approved hash="5,1,ef31a534512a445c"/>
-<approved hash="5,1,6a0d253451224168"/>
-<approved hash="5,1,0c3c8898d446b329"/>
-<approved hash="5,1,c3673f8300f21fdd"/>
-<approved hash="5,1,e6a56f2591317e02"/>
-<approved hash="5,1,900be6a488b62f1a"/>
-<approved hash="5,1,678018f4586ea361"/>
-<approved hash="5,1,9afb4b1c7cd1e936"/>
-<approved hash="5,1,2fc14b1c7cd1383a"/>
-<approved hash="5,1,37c373646911c036"/>
-<approved hash="5,1,feb557824df70940"/>
-<approved hash="5,1,26b754d0e8a04106"/>
-</errors>
 </board>
 </drawing>
 </eagle>
