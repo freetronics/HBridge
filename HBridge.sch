@@ -7738,6 +7738,9 @@ Current limit switch positions:
 <wire x1="127" y1="279.4" x2="127" y2="193.04" width="0.3048" layer="97" style="longdash"/>
 <text x="12.7" y="363.22" size="1.778" layer="94" ratio="15">Channel A Inputs</text>
 <text x="12.7" y="274.32" size="1.778" layer="94" ratio="15">Channel B Inputs</text>
+<text x="25.4" y="335.28" size="1.27" layer="97" ratio="15">(PWM)</text>
+<text x="25.4" y="261.62" size="1.27" layer="97" ratio="15">(PWM)</text>
+<text x="25.4" y="266.7" size="1.27" layer="97" ratio="15">(PWM)</text>
 </plain>
 <instances>
 <instance part="H4" gate="G$1" x="38.1" y="40.64" smashed="yes" rot="MR180">
@@ -8221,11 +8224,6 @@ Current limit switch positions:
 <pinref part="SL1" gate="G$1" pin="2"/>
 <pinref part="H1" gate="G$1" pin="2"/>
 </segment>
-<segment>
-<pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="340.36" x2="17.78" y2="340.36" width="0.1524" layer="91"/>
-<label x="20.32" y="340.36" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="D8" class="0">
 <segment>
@@ -8235,9 +8233,9 @@ Current limit switch positions:
 <pinref part="H1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="3"/>
-<wire x1="33.02" y1="335.28" x2="17.78" y2="335.28" width="0.1524" layer="91"/>
-<label x="20.32" y="335.28" size="1.778" layer="95"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="340.36" x2="17.78" y2="340.36" width="0.1524" layer="91"/>
+<label x="20.32" y="340.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D7" class="0">
@@ -8246,6 +8244,11 @@ Current limit switch positions:
 <label x="213.36" y="50.8" size="1.778" layer="95"/>
 <pinref part="SL2" gate="G$1" pin="8"/>
 <pinref part="H2" gate="G$1" pin="8"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="337.82" x2="17.78" y2="337.82" width="0.1524" layer="91"/>
+<label x="20.32" y="337.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D6" class="0">
@@ -8256,9 +8259,9 @@ Current limit switch positions:
 <pinref part="H2" gate="G$1" pin="7"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="264.16" x2="17.78" y2="264.16" width="0.1524" layer="91"/>
-<label x="20.32" y="264.16" size="1.778" layer="95"/>
+<pinref part="JP3" gate="G$1" pin="3"/>
+<wire x1="33.02" y1="335.28" x2="17.78" y2="335.28" width="0.1524" layer="91"/>
+<label x="20.32" y="335.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D5" class="0">
@@ -8282,9 +8285,9 @@ Current limit switch positions:
 <pinref part="H2" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="3"/>
-<wire x1="33.02" y1="261.62" x2="17.78" y2="261.62" width="0.1524" layer="91"/>
-<label x="20.32" y="261.62" size="1.778" layer="95"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="264.16" x2="17.78" y2="264.16" width="0.1524" layer="91"/>
+<label x="20.32" y="264.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D3" class="0">
@@ -8295,9 +8298,9 @@ Current limit switch positions:
 <pinref part="H2" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="337.82" x2="17.78" y2="337.82" width="0.1524" layer="91"/>
-<label x="20.32" y="337.82" size="1.778" layer="95"/>
+<pinref part="JP4" gate="G$1" pin="3"/>
+<wire x1="33.02" y1="261.62" x2="17.78" y2="261.62" width="0.1524" layer="91"/>
+<label x="20.32" y="261.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D2" class="0">
@@ -8345,13 +8348,15 @@ Current limit switch positions:
 <net name="VREF12" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="SW1" gate="G$1" pin="2-C"/>
-<wire x1="48.26" y1="304.8" x2="55.88" y2="304.8" width="0.1524" layer="91"/>
-<junction x="55.88" y="304.8"/>
 <label x="60.96" y="304.8" size="1.778" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="VREF12"/>
 <wire x1="55.88" y1="304.8" x2="144.78" y2="304.8" width="0.1524" layer="91"/>
 <label x="111.76" y="304.8" size="1.778" layer="95"/>
+<wire x1="55.88" y1="304.8" x2="53.34" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="304.8" x2="53.34" y2="314.96" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="1-C"/>
+<wire x1="53.34" y1="314.96" x2="48.26" y2="314.96" width="0.1524" layer="91"/>
+<junction x="55.88" y="304.8"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -8694,17 +8699,17 @@ Current limit switch positions:
 <net name="N$15" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="299.72" x2="20.32" y2="304.8" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="2-2"/>
-<wire x1="20.32" y1="304.8" x2="38.1" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="299.72" x2="20.32" y2="314.96" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="1-2"/>
+<wire x1="20.32" y1="314.96" x2="38.1" y2="314.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="299.72" x2="30.48" y2="302.26" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="2-3"/>
-<wire x1="30.48" y1="302.26" x2="38.1" y2="302.26" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="299.72" x2="30.48" y2="312.42" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="1-3"/>
+<wire x1="30.48" y1="312.42" x2="38.1" y2="312.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -8729,15 +8734,19 @@ Current limit switch positions:
 <errors>
 <approved hash="102,1,7.62,157.48,5V,+5V,,,,"/>
 <approved hash="102,1,218.44,165.1,5V,+5V,,,,"/>
-<approved hash="102,1,203.2,228.6,+12V,VBB,,,,"/>
-<approved hash="102,1,215.9,228.6,+12V,VBB,,,,"/>
-<approved hash="102,1,180.34,279.4,+12V,VBB,,,,"/>
+<approved hash="102,1,200.66,281.94,+12V,VBB,,,,"/>
+<approved hash="102,1,213.36,281.94,+12V,VBB,,,,"/>
+<approved hash="102,1,177.8,332.74,+12V,VBB,,,,"/>
 <approved hash="102,1,91.44,50.8,+12V,VBB,,,,"/>
-<approved hash="104,1,137.16,233.68,IC1P,VCC,+5V,,,"/>
+<approved hash="104,1,165.1,360.68,IC1P,VCC,+5V,,,"/>
 <approved hash="106,1,132.08,40.64,MISO,,,,,"/>
 <approved hash="106,1,139.7,38.1,MOSI,,,,,"/>
 <approved hash="106,1,132.08,38.1,SCK,,,,,"/>
 <approved hash="115,1,82.55,55.2873,J3,,,,,"/>
+<approved hash="115,1,50.1227,336.355,JP1,,,,,"/>
+<approved hash="115,1,50.1227,262.695,JP2,,,,,"/>
+<approved hash="115,1,36.2373,336.355,JP3,,,,,"/>
+<approved hash="115,1,36.2373,262.695,JP4,,,,,"/>
 </errors>
 </schematic>
 </drawing>
