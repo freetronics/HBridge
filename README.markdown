@@ -1,6 +1,6 @@
 Freetronics H-Bridge Shield
 ===========================
-Copyright 2012 Freetronics Pty Ltd  
+Copyright 2014 Freetronics Pty Ltd  
 Freetronics site:  www.freetronics.com  
 Freetronics email: info@freetronics.com  
 
